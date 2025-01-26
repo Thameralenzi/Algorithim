@@ -23,3 +23,9 @@ def get_input():
         print("error, both numbers must be positive.")
         return 0
     return (num1, num2)
+
+# main part of the program
+input_data = get_input()
+if input_data != 0:
+    gcd_result = GCDCalculator.calculate_gcd(input_data[0], input_data[1])
+    print(f"the gcd of {input_data[0]} and {input_data[1]} is: {gcd_result}")
