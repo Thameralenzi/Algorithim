@@ -9,3 +9,17 @@ class GCDCalculator:
             y = x % y  # calculate the remainder
             x = temp  # update 'x' to the previous value of 'y'
         return x
+    
+# # let us try our own selves
+# try first input 100 and the second input 80 for example
+def get_input():
+    """this function gets input from the user and calculates the gcd"""
+    
+    num1 = int(input("please enter the first positive number: "))
+    num2 = int(input("please enter the second positive number: "))
+
+    # check if the inputs are valid positive numbers
+    if num1 <= 0 or num2 <= 0:
+        print("error, both numbers must be positive.")
+        return 0
+    return (num1, num2)
